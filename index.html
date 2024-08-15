@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason-object</title>
+    <style>
+        .card{
+            height: 300px;
+            width: 300px;
+            background-color: thistle;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        let students =[
+            {name:'anzila',id:101,age:10},
+            {name:'shazia',id:102,age:11},
+            {name:'emaan',id:103,age:13},
+            {name:'javaid',id:104,age:14},
+        ];
+        for(i=0;i<students.length;i++){
+            document.querySelector('.container').innerHTML +=`
+            <div class='card'>
+                <div class='card-body'>
+                    <h1>${students[i].name}</h1>
+                    <h1>${students[i].age}</h1>
+                    <h1>${students[i].id}</h1>
+            `
+        }
+    </script>
+</body>
+</html>
